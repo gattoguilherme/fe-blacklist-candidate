@@ -1,0 +1,14 @@
+.container {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+.form-control {
+  text-align:center
+}

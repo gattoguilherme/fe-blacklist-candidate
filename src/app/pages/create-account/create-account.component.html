@@ -1,0 +1,127 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="header">
+            <h4 class="title">Indicar BLACK</h4>
+            <div *ngIf="true">Preencha os valores corretamente</div>
+          </div>
+          <div class="content">
+            <form [formGroup]="candidateForm" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Nome</label>
+                    <input
+                      formControlName="name"
+                      id="name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Nome"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Cidade</label>
+                    <input
+                      formControlName="city"
+                      id="city"
+                      type="text"
+                      class="form-control"
+                      placeholder="Cidade"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>UF</label>
+                    <input
+                      formControlName="uf"
+                      id="uf"
+                      type="text"
+                      class="form-control"
+                      placeholder="SP"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Celular</label>
+                    <input
+                      formControlName="phoneNumber"
+                      id="phoneNumber"
+                      type="text"
+                      class="form-control"
+                      placeholder="(99)99999-9999"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input
+                      formControlName="email"
+                      id="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="email@email.com"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Principal habilidade</label>
+                    <input
+                      formControlName="nameSkill"
+                      id="nameSkill"
+                      type="text"
+                      class="form-control"
+                      placeholder="Ex. Frontend"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Situação</label>
+                    <input
+                      formControlName="condit"
+                      id="condit"
+                      type="text"
+                      class="form-control"
+                      placeholder="Em transição carreira"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Score</label>
+                    <input
+                      formControlName="score"
+                      id="score"
+                      type="number"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success btn-fill pull-right">
+                INDICAR
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

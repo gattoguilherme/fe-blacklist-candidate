@@ -1,0 +1,22 @@
+<ng-container *ngIf="!loaderStatus">
+  <!-- <div class="container" *ngFor="let d of dwellers">
+    <app-blacks-card [dweller]="d"></app-blacks-card>
+  </div> -->
+  <div class="container" *ngFor="let c of candidateList">
+    <app-blacks-card [candidate]="c"></app-blacks-card>
+  </div>
+  
+  <div
+    *ngIf="this.dwellers.length < 1"
+    style="text-align: center; margin-top: 20%"
+  >
+    <span
+      >Não foram encontrados moradores :( <br />
+      Por favor, verifique o campo de busca e tente novamente</span
+    >
+  </div>
+</ng-container>
+
+<ng-container *ngIf="loaderStatus">
+  <app-loading></app-loading>
+</ng-container>

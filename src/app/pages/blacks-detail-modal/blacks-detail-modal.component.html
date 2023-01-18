@@ -1,0 +1,144 @@
+<!-- <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ title }}</h4>
+    <!-- <button
+      type="button"
+      class="close pull-right"
+      aria-label="Close"
+      (click)="bsModalRef.hide()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+<!-- </div> -->
+<div class="modal-body">
+  <form class="row g-3" [formGroup]="candidateForm" (ngSubmit)="onSubmit()">
+    <!-- <div class="col-md-6">
+        <label for="id" class="form-label">Id</label>
+        <input formControlName="id" id="id" type="text" class="form-control" placeholder="id" aria-label="id" aria-describedby="basic-addon1">
+      </div> -->
+    <div class="col-md-6">
+      <label for="name" class="form-group">Nome</label>
+      <input
+        formControlName="name"
+        id="name"
+        type="text"
+        class="form-control"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+    <div class="col-12">
+      <label for="email" class="form-group">Email</label>
+      <input
+        formControlName="email"
+        id="email"
+        formControlName="email"
+        type="text"
+        class="form-control"
+        id="inputAddress"
+        placeholder="1234 Main St"
+      />
+    </div>
+    <div class="col-6">
+      <label for="city" class="form-label">Cidade</label>
+      <input
+        formControlName="city"
+        id="city"
+        type="text"
+        class="form-control"
+        id="inputAddress2"
+        placeholder="Apartment, studio, or floor"
+      />
+    </div>
+    <div class="col-md-2">
+      <label for="uf" class="form-label">UF</label>
+      <input
+        formControlName="uf"
+        id="uf"
+        type="text"
+        class="form-control"
+        id="inputCity"
+      />
+    </div>
+    <div class="col-md-3">
+      <label for="score" class="form-label">Score</label>
+      <input
+        formControlName="score"
+        id="score"
+        type="number"
+        class="form-control"
+        id="inputZip"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="condit" class="form-label">Situação</label>
+      <input
+        formControlName="condit"
+        id="condit"
+        type="text"
+        class="form-control"
+        id="inputZip"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="phoneNumber" class="form-label">Celular</label>
+      <input
+        formControlName="phoneNumber"
+        id="phoneNumber"
+        type="text"
+        class="form-control"
+        id="inputZip"
+      />
+    </div>
+    <div class="col-md-12">
+      <label for="nameSkill" class="form-label">Principal habilidade</label>
+      <input
+        formControlName="nameSkill"
+        id="nameSkill"
+        type="text"
+        class="form-control"
+        id="inputZip"
+      />
+    </div>
+
+    <div class="col-5">
+      <button type="submit" class="btn btn-success floatedLeft btn-fill">Salvar</button>
+    </div>
+    <div class="col-7">
+      <button type="button" class="btn btn-danger btn-fill" (click)="delete()">
+        Excluir
+      </button>
+      <button
+        type="button"
+        class="btn btn-default floatedRight btn-fill"
+        (click)="bsModalRef.hide()"
+      >
+        Fechar
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- <form [formGroup]="dwellerForm" (ngSubmit)="onSubmit()">
+  
+      <div class="input-group mb-3">
+        <span for="guid" class="input-group-text">ID: </span>
+        <input formControlName="guid" id="guid" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+  
+      <div class="input-group mb-3">
+        <span for="name" class="input-group-text">Nome: </span>
+        <input formControlName="name" id="name" type="text" class="form-control" placeholder="Last Name" aria-label="Last" aria-describedby="basic-addon1">
+      </div>
+  
+      <div style="float:right; margin-bottom: 10px;">
+        <button type="submit" class="btn btn-success" [disabled]="!dwellerForm.valid">Salvar</button>
+        <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">
+          {{ closeBtnName }}
+        </button>
+      </div>
+  
+    </form> -->
+
+<!-- <div class="modal-footer">
+  
+  
+  </div> -->

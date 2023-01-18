@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ candidate.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      {{ candidate.email }}
+    </h6>
+    <h6 class="card-subtitle mb-2 text-muted">
+      Tel: {{ candidate.phoneNumber }}
+    </h6>
+    <hr>
+    <!-- <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p> -->
+    <div class="row">
+      <div class="col-12">Pontuação: {{candidate.score}}</div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-12">Situação</div>
+    </div>
+    <div class="row">
+      <div class="col-12">{{candidate.condit}}</div>
+    </div>
+    <!-- <a href="#" class="card-link">Card link</a> -->
+    <button type="button" class="btn btn-dark col-12 btn-fill" (click)="showModal()">
+      Detalhes
+    </button>
+  </div>
+</div>
